@@ -8,8 +8,8 @@ import logo from '~/assets/logo.svg';
 const schema = Yup.object().shape({
   email: Yup.string()
     .email('Enter a valid email')
-    .required('Enter a email'),
-  password: Yup.string().required('Enter a password'),
+    .required('Enter your email'),
+  password: Yup.string().required('Enter your password'),
 });
 
 export default function SignIn() {
